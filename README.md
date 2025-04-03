@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Confer - Busca de Usuários do GitHub
 
-## Getting Started
+Este é um projeto em **Next.js** que permite buscar informações de um usuário do **GitHub** e exibir seus dados. Se um usuário for encontrado, as informações são exibidas na tela. Caso contrário, uma mensagem de erro é mostrada. Além disso, há um botão dinâmico que alterna entre a lupa para busca e uma lixeira para limpar os dados renderizados.
 
-First, run the development server:
+## Tecnologias Utilizadas
+
+- **Next.js**
+- **TypeScript**
+- **React Hooks**
+- **Tailwind CSS**
+- **Lucide React** (para ícones)
+
+## Funcionalidades
+
+- Busca de usuários do GitHub pelo nome.
+- Exibição de informações como nome, avatar e biografia.
+- Feedback de carregamento durante a busca.
+- Tratamento de erro para usuários inexistentes.
+- Botão dinâmico que troca entre **buscar** e **limpar**.
+
+## Como Executar o Projeto
+
+### 1. Clonar o Repositório
+
+```bash
+git clone https://github.com/seu-usuario/seu-repositorio.git
+cd seu-repositorio
+```
+
+### 2. Instalar as Dependências
+
+```bash
+npm install
+# ou
+yarn install
+```
+
+### 3. Iniciar o Servidor de Desenvolvimento
 
 ```bash
 npm run dev
-# or
+# ou
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Acesse **[http://localhost:3000](http://localhost:3000)** para visualizar a aplicação.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Estrutura do Projeto
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+/
+├── service/
+│   ├── data.ts  # Função para buscar usuário do GitHub
+│
+├── app/
+│   ├── page.tsx  # Página principal
+│   ├── user/
+│   │   ├── page.tsx  # Componente para exibir os dados do usuário
+│   ├── error/
+│   │   ├── page.tsx  # Componente de erro
+│
+├── components/
+│   ├── Confer.tsx  # Componente principal da busca
+│
+└── README.md
+```
 
-## Learn More
+## Melhorias Futuras
 
-To learn more about Next.js, take a look at the following resources:
+- Implementar um histórico de buscas.
+- Adicionar dark mode.
+- Melhorar a responsividade para dispositivos menores.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Desenvolvido por **@LucasSSLV** 🚀
+# SearchGitHub
