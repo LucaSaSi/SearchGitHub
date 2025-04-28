@@ -1,6 +1,6 @@
 "use client";
 import { Search, Trash } from "lucide-react";
-import User from "../user/page";
+import User from "../user/userComponent";
 import { buscarUsuarioGitHub } from "../../service/data";
 import { useState } from "react";
 import ErrorPage from "../error/page";
